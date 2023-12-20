@@ -44,21 +44,23 @@ def play():
     print(
         f"\nDealer's hand: {dealer_cards}(Score: {dealer_score})\nYour hand: {player_cards}(Score: {player_score})\n"
     )
+    print(result(player_score, dealer_score))
 
+
+def result(player_score: int, dealer_score: int) -> str:
     if player_score == dealer_score:
-        print("Draw!")
+        return "Draw!"
     elif dealer_score == 21:
-        print("Dealer has Blackjack. You lost! :(")
+        return "Dealer has Blackjack. You lost! :("
     elif player_score == 21:
-        print("You got BLACKJACKK!!!!!!! You won.")
+        return "You got BLACKJACKK!!!!!!! You won."
     elif player_score > 21:
-        print("You busted. You lost.")
+        return "You busted. You lost."
     elif dealer_score > 21:
-        print("Dealer busted. You won.")
+        return "Dealer busted. You won."
     elif player_score > dealer_score:
-        print("You won.")
-    else:
-        print("You lost.")
+        return "You won."
+    return "You lost."
 
 
 def deal():
