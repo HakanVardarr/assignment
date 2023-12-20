@@ -15,7 +15,6 @@ def main():
     array = [88, 113, 717, 86, 58, 788, 527, 535, 83, 283, 976, 686, 803, 879, 380]
     print(sort_array(array))
     # Blackjack
-    print("---------Blackjack---------")
     play()
 
 

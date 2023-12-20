@@ -2,7 +2,7 @@ import random
 
 
 def play():
-    # 0 as
+    print("---------Blackjack---------")
     dealer_cards = [deal(), deal()]
     player_cards = [deal(), deal()]
 
