@@ -1,12 +1,12 @@
-from blackjack import play
-from factorial import factorial
-from sort_array import sort_array
-from sort_numbers import sort_numbers
+from tasks.blackjack import play
+from tasks.factorial import factorial
+from tasks.sort_array import sort_array
+from tasks.sort_numbers import sort_numbers
 
 
 def main():
     # Girilen sayının faktöriyelini hesaplayan fonksiyon
-    number: int = factorial(5)
+    number: int = factorial(11)
     print(number)
     # Girilen iki sayıyı büyükten küçüğe sıralayan fonksiyon
     sorted_numbers: (int, int) = sort_numbers(10, 20)
