@@ -13,7 +13,8 @@ def main():
     print(sorted_numbers)
     # Girilen sayı listesindeki elemanları büyükten küçüğe sıralayan fonksiyon (Bubble Sort)
     array = [88, 113, 717, 86, 58, 788, 527, 535, 83, 283, 976, 686, 803, 879, 380]
-    print(sort_array(array))
+    sort_array(array)
+    print(array)
     # Blackjack
     play()
 
